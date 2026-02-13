@@ -1,0 +1,2188 @@
+<data>
+  <xpath expr="//group[@name='utm_link']" position="replace"/>
+  
+  <xpath expr="//div[@name='journal_div']" position="after">
+    <field name="x_studio_commercial_2"/>
+  </xpath>
+  <xpath expr="//page[@name='aml_tab']" position="attributes">
+    <attribute name="groups">account.group_account_readonly,documents.group_documents_manager</attribute>
+  </xpath>
+  <xpath expr="//field[@name='line_ids']" position="attributes">
+    <attribute name="widget">one2many</attribute>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='aml_tab']/field[@name='line_ids']/list[1]/field[@name='name']" position="attributes">
+    <attribute name="options">{"model_field":"purchase_line_id"}</attribute>
+    <attribute name="widget">char</attribute>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='aml_tab']/field[@name='line_ids']/list[1]/field[@name='analytic_distribution']" position="after">
+    <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='aml_tab']/field[@name='line_ids']/list[1]/field[@name='account_id']" position="move"/>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='aml_tab']/field[@name='line_ids']/form[1]/group[1]/field[@name='name']" position="attributes">
+    <attribute name="options">{"placeholder_field":"ref"}</attribute>
+    <attribute name="widget">char</attribute>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='aml_tab']/div[1]" position="after">
+    <group name="studio_group_16b_1jgi0fi86">
+      <group name="studio_group_16b_left"/>
+      <group name="studio_group_16b_right">
+        <field name="amount_untaxed" string="Montant HT"/>
+        <field name="amount_tax" string="Taxe 20%"/>
+        <field name="amount_total_signed" string="Total TTC"/>
+      </group>
+    </group>
+  </xpath>
+  <xpath expr="//field[@name='incoterm_location']" position="attributes">
+    <attribute name="string">2% taux de pénalités de retard</attribute>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="MARGE FACTURE" name="studio_page_9la_1jc1a06c4">
+      <group name="studio_group_9la">
+        <group name="studio_group_9la_left">
+          <field name="x_studio_marge"/>
+        </group>
+        <group name="studio_group_9la_right"/>
+      </group>
+    </page>
+    <page string="Ligne de commande" name="studio_page_9am_1jgmu6g46">
+      <group name="studio_group_9am">
+        <group name="studio_group_9am_left"/>
+        <group name="studio_group_9am_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[2]" position="attributes">
+    <attribute name="options">{"model_field":"purchase_line_id","placeholder_field":"ref"}</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[2]" position="after">
+    <field name="quantity" optional="show"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="invoice_line_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="pos_order_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_many2one_field_2c5_1jgn6h97t"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="Nouvelle page" name="studio_page_3r3_1jgn6mq5n">
+      <group name="studio_group_3r3">
+        <group name="studio_group_3r3_left"/>
+        <group name="studio_group_3r3_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[6]" position="replace"/>
+  <xpath expr="//form[1]/*[1] | //list[1]/*[1]" position="before">
+    <header/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/form[1]/group[1]/field[1]" position="before">
+    <field name="x_studio_selection_field_8as_1jgn7u04m"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/form[1]/group[1]/field[1]" position="attributes">
+    <attribute name="widget">state_selection</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/form[1]/group[1]/field[1]" position="attributes">
+    <attribute name="string">Références</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="attributes">
+    <attribute name="string">Références</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_char_field_529_1jgn8avqp"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_produit"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">many2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_867_1jgn8oqcr"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="inside">
+    <list>
+      <field name="x_studio_sequence" widget="handle"/>
+      <field name="x_name"/>
+    </list>
+    <list class="o_sale_order" string="Sales Orders" sample="1" decoration-muted="state == 'cancel'">
+      <header>
+        <button name="351" type="action" string="Create Invoices" class="btn-secondary"/>
+      </header>
+      <field name="message_needaction" column_invisible="True"/>
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" string="Number" readonly="1" decoration-bf="1"/>
+      <field name="date_order" optional="show" readonly="state in ['cancel', 'sale']"/>
+      <field name="commitment_date" optional="hide" decoration-danger="&#10;                        (&#10;                            (&#10;                                commitment_date &lt; effective_date&#10;                                or commitment_date &lt; datetime.datetime.combine(&#10;                                    datetime.date.today(),&#10;                                    datetime.time(0,0,0)&#10;                                ).to_utc().strftime('%Y-%m-%d %H:%M:%S')&#10;                            )&#10;                            and delivery_status in ['pending', 'started']&#10;                            and effective_date &lt;= commitment_date&#10;                            or delivery_status == 'partial'&#10;                        )&#10;                    "/>
+      <field name="expected_date" optional="hide"/>
+      <field name="partner_id" readonly="1"/>
+      <field name="website_id" groups="website.group_multi_website" optional="show"/>
+      <field name="user_id" widget="many2one_avatar_user" optional="show"/>
+      <field name="activity_ids" widget="list_activity" optional="show"/>
+      <field name="team_id" optional="hide"/>
+      <field name="company_id" groups="!base.group_multi_company" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
+      <field name="amount_untaxed" sum="Total Tax Excluded" widget="monetary" optional="hide"/>
+      <field name="amount_tax" sum="Tax Total" widget="monetary" optional="hide"/>
+      <field name="amount_total" sum="Total Tax Included" widget="monetary" decoration-bf="1" decoration-info="invoice_status == 'to invoice'" optional="show"/>
+      <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" optional="hide"/>
+      <field name="warehouse_id" options="{'no_create': True}" groups="stock.group_stock_multi_warehouses" optional="hide" readonly="state == 'sale'"/>
+      <field name="state" decoration-success="state == 'sale'" decoration-info="state == 'draft'" decoration-primary="state == 'sent'" widget="badge" optional="hide"/>
+      <field name="effective_date" column_invisible="True"/>
+      <field name="delivery_status" decoration-success="delivery_status == 'full'" decoration-warning="delivery_status == 'partial'" decoration-info="delivery_status in ['pending', 'started']" widget="badge" optional="hide"/>
+      <field name="invoice_status" decoration-success="invoice_status == 'invoiced'" decoration-info="invoice_status == 'to invoice'" decoration-warning="invoice_status == 'upselling'" widget="badge" optional="show"/>
+      <field name="client_order_ref" optional="hide"/>
+      <field name="validity_date" optional="hide"/>
+    </list>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <form>
+      <sheet string="Purchase Line and Vendor Bill line matching view">
+        <group>
+          <group>
+            <field name="pol_id"/>
+            <field name="company_id"/>
+            <field name="product_id"/>
+            <field name="line_uom_id"/>
+            <field name="purchase_order_id"/>
+            <field name="line_amount_untaxed"/>
+            <field name="state"/>
+            <field name="product_uom_qty"/>
+            <field name="billed_amount_untaxed"/>
+            <field name="reference"/>
+          </group>
+          <group>
+            <field name="aml_id"/>
+            <field name="partner_id"/>
+            <field name="line_qty"/>
+            <field name="qty_invoiced"/>
+            <field name="account_move_id"/>
+            <field name="currency_id"/>
+            <field name="product_uom_id"/>
+            <field name="product_uom_price"/>
+            <field name="purchase_amount_untaxed"/>
+          </group>
+        </group>
+        <group>
+          <separator/>
+        </group>
+      </sheet>
+    </form>
+    <list>
+      <field name="x_studio_sequence" widget="handle"/>
+      <field name="x_name"/>
+    </list>
+    <list class="o_sale_order" string="Sales Orders" sample="1" decoration-muted="state == 'cancel'">
+      <header>
+        <button name="351" type="action" string="Create Invoices" class="btn-secondary"/>
+      </header>
+      <field name="message_needaction" column_invisible="True"/>
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" string="Number" readonly="1" decoration-bf="1"/>
+      <field name="date_order" optional="show" readonly="state in ['cancel', 'sale']"/>
+      <field name="commitment_date" optional="hide" decoration-danger="&#10;                        (&#10;                            (&#10;                                commitment_date &lt; effective_date&#10;                                or commitment_date &lt; datetime.datetime.combine(&#10;                                    datetime.date.today(),&#10;                                    datetime.time(0,0,0)&#10;                                ).to_utc().strftime('%Y-%m-%d %H:%M:%S')&#10;                            )&#10;                            and delivery_status in ['pending', 'started']&#10;                            and effective_date &lt;= commitment_date&#10;                            or delivery_status == 'partial'&#10;                        )&#10;                    "/>
+      <field name="expected_date" optional="hide"/>
+      <field name="partner_id" readonly="1"/>
+      <field name="website_id" groups="website.group_multi_website" optional="show"/>
+      <field name="user_id" widget="many2one_avatar_user" optional="show"/>
+      <field name="activity_ids" widget="list_activity" optional="show"/>
+      <field name="team_id" optional="hide"/>
+      <field name="company_id" groups="!base.group_multi_company" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
+      <field name="amount_untaxed" sum="Total Tax Excluded" widget="monetary" optional="hide"/>
+      <field name="amount_tax" sum="Tax Total" widget="monetary" optional="hide"/>
+      <field name="amount_total" sum="Total Tax Included" widget="monetary" decoration-bf="1" decoration-info="invoice_status == 'to invoice'" optional="show"/>
+      <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" optional="hide"/>
+      <field name="warehouse_id" options="{'no_create': True}" groups="stock.group_stock_multi_warehouses" optional="hide" readonly="state == 'sale'"/>
+      <field name="state" decoration-success="state == 'sale'" decoration-info="state == 'draft'" decoration-primary="state == 'sent'" widget="badge" optional="hide"/>
+      <field name="effective_date" column_invisible="True"/>
+      <field name="delivery_status" decoration-success="delivery_status == 'full'" decoration-warning="delivery_status == 'partial'" decoration-info="delivery_status in ['pending', 'started']" widget="badge" optional="hide"/>
+      <field name="invoice_status" decoration-success="invoice_status == 'invoiced'" decoration-info="invoice_status == 'to invoice'" decoration-warning="invoice_status == 'upselling'" widget="badge" optional="show"/>
+      <field name="client_order_ref" optional="hide"/>
+      <field name="validity_date" optional="hide"/>
+    </list>
+    <list class="o_sale_order" string="Sales Orders" sample="1" decoration-muted="state == 'cancel'">
+      <header>
+        <button name="351" type="action" string="Create Invoices" class="btn-secondary"/>
+      </header>
+      <field name="message_needaction" column_invisible="True"/>
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" string="Number" readonly="1" decoration-bf="1"/>
+      <field name="date_order" optional="show" readonly="state in ['cancel', 'sale']"/>
+      <field name="commitment_date" optional="hide" decoration-danger="&#10;                        (&#10;                            (&#10;                                commitment_date &lt; effective_date&#10;                                or commitment_date &lt; datetime.datetime.combine(&#10;                                    datetime.date.today(),&#10;                                    datetime.time(0,0,0)&#10;                                ).to_utc().strftime('%Y-%m-%d %H:%M:%S')&#10;                            )&#10;                            and delivery_status in ['pending', 'started']&#10;                            and effective_date &lt;= commitment_date&#10;                            or delivery_status == 'partial'&#10;                        )&#10;                    "/>
+      <field name="expected_date" optional="hide"/>
+      <field name="partner_id" readonly="1"/>
+      <field name="website_id" groups="website.group_multi_website" optional="show"/>
+      <field name="user_id" widget="many2one_avatar_user" optional="show"/>
+      <field name="activity_ids" widget="list_activity" optional="show"/>
+      <field name="team_id" optional="hide"/>
+      <field name="company_id" groups="!base.group_multi_company" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
+      <field name="amount_untaxed" sum="Total Tax Excluded" widget="monetary" optional="hide"/>
+      <field name="amount_tax" sum="Tax Total" widget="monetary" optional="hide"/>
+      <field name="amount_total" sum="Total Tax Included" widget="monetary" decoration-bf="1" decoration-info="invoice_status == 'to invoice'" optional="show"/>
+      <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" optional="hide"/>
+      <field name="warehouse_id" options="{'no_create': True}" groups="stock.group_stock_multi_warehouses" optional="hide" readonly="state == 'sale'"/>
+      <field name="state" decoration-success="state == 'sale'" decoration-info="state == 'draft'" decoration-primary="state == 'sent'" widget="badge" optional="hide"/>
+      <field name="effective_date" column_invisible="True"/>
+      <field name="delivery_status" decoration-success="delivery_status == 'full'" decoration-warning="delivery_status == 'partial'" decoration-info="delivery_status in ['pending', 'started']" widget="badge" optional="hide"/>
+      <field name="invoice_status" decoration-success="invoice_status == 'invoiced'" decoration-info="invoice_status == 'to invoice'" decoration-warning="invoice_status == 'upselling'" widget="badge" optional="show"/>
+      <field name="client_order_ref" optional="hide"/>
+      <field name="validity_date" optional="hide"/>
+    </list>
+    <list name="move_line_tree" string="Journal Items" create="false" edit="true" expand="context.get('expand', False)" multi_edit="1" sample="1" js_class="account_move_line_list">
+      <field name="move_id" column_invisible="True"/>
+      <field name="invoice_date" string="Invoice Date" optional="hide"/>
+      <field name="date" readonly="1"/>
+      <field name="company_id" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" readonly="1" optional="hide"/>
+      <field name="journal_id" readonly="1" options="{&quot;no_open&quot;:True}" optional="hide"/>
+      <field name="move_name" string="Journal Entry" widget="open_move_widget"/>
+      <field name="account_id" options="{'no_open': True, 'no_create': True}" domain="[('deprecated', '=', False)]" groups="account.group_account_readonly"/>
+      <field name="partner_id" optional="show" readonly="move_type != 'entry'"/>
+      <field name="ref" optional="hide" readonly="False"/>
+      <field name="product_id" readonly="1" optional="hide"/>
+      <field name="name" optional="show"/>
+      <field name="deferred_start_date" optional="hide" readonly="has_deferred_moves"/>
+      <field name="deferred_end_date" optional="hide" readonly="has_deferred_moves"/>
+      <field name="analytic_distribution" widget="analytic_distribution" groups="analytic.group_analytic_accounting" optional="hide" options="{'product_field': 'product_id', 'account_field': 'account_id', 'force_applicability': 'optional'}"/>
+      <field name="tax_ids" widget="many2many_tags" optional="hide" readonly="1"/>
+      <field name="amount_currency" string="In Currency" groups="base.group_multi_currency" optional="hide" readonly="1" invisible="is_same_currency"/>
+      <field name="currency_id" groups="base.group_multi_currency" optional="hide" string="Currency" readonly="1" invisible="is_same_currency"/>
+      <field name="debit" sum="Total Debit" readonly="1"/>
+      <field name="credit" sum="Total Credit" readonly="1"/>
+      <field name="tax_tag_ids" string="Tax Grids" options="{'no_create': True, 'no_create_edit': True}" domain="[('applicability', '=', 'taxes')]" widget="many2many_tags" optional="hide"/>
+      <field name="discount_date" string="Discount Date" optional="hide"/>
+      <field name="discount_amount_currency" string="Discount Amount" optional="hide"/>
+      <field name="tax_line_id" string="Originator Tax" optional="hide" readonly="1"/>
+      <field name="date_maturity" readonly="1" optional="hide"/>
+      <field name="balance" sum="Total Balance" optional="hide" readonly="1"/>
+      <field name="matching_number" string="Matching" readonly="1" optional="show" widget="matching_link_widget"/>
+      <field name="amount_residual" sum="Total Residual" string="Residual" optional="hide" readonly="1" invisible="not is_account_reconcile"/>
+      <field name="amount_residual_currency" sum="Total Residual in Currency" string="Residual in Currency" optional="hide" readonly="1" invisible="is_same_currency or not is_account_reconcile" groups="base.group_multi_currency"/>
+      <field name="move_type" column_invisible="True"/>
+      <field name="parent_state" column_invisible="True"/>
+      <field name="account_type" column_invisible="True"/>
+      <field name="statement_line_id" column_invisible="True"/>
+      <field name="company_currency_id" column_invisible="True"/>
+      <field name="is_same_currency" column_invisible="True"/>
+      <field name="is_account_reconcile" column_invisible="True"/>
+      <field name="sequence" column_invisible="True"/>
+      <groupby name="partner_id">
+        <button name="edit" type="edit" icon="fa-edit" title="Edit"/>
+      </groupby>
+      <header>
+        <button name="action_reconcile" type="object" string="Reconcile" groups="account.group_account_user" data-hotkey="r"/>
+        <button name="turn_as_asset" type="object" string="Create Asset" groups="account.group_account_user" data-hotkey="c"/>
+      </header>
+      <field name="is_account_reconcile" column_invisible="True"/>
+      <field name="has_deferred_moves" column_invisible="True"/>
+    </list>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <list>
+      <field name="x_studio_sequence" widget="handle"/>
+      <field name="x_name"/>
+    </list>
+    <list>
+      <field name="x_studio_sequence" widget="handle"/>
+      <field name="x_name"/>
+    </list>
+    <list string="POS Orders" create="0" sample="1" decoration-info="state == 'draft'" decoration-muted="state == 'cancel'" duplicate="0">
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" decoration-bf="1"/>
+      <field name="session_id" readonly="state != 'draft'"/>
+      <field name="date_order"/>
+      <field name="config_id"/>
+      <field name="pos_reference"/>
+      <field name="tracking_number" optional="hide"/>
+      <field name="partner_id"/>
+      <field name="employee_id" widget="many2one_avatar_employee" readonly="state in ['done', 'invoiced']"/>
+      <field name="amount_total" sum="Amount total" widget="monetary" decoration-bf="1"/>
+      <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state not in ('draft','cancel')"/>
+      <field name="is_edited" readonly="1" optional="hide"/>
+    </list>
+    <list class="o_sale_order" string="Sales Orders" sample="1" decoration-muted="state == 'cancel'">
+      <header>
+        <button name="351" type="action" string="Create Invoices" class="btn-secondary"/>
+      </header>
+      <field name="message_needaction" column_invisible="True"/>
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" string="Number" readonly="1" decoration-bf="1"/>
+      <field name="date_order" optional="show" readonly="state in ['cancel', 'sale']"/>
+      <field name="commitment_date" optional="hide" decoration-danger="&#10;                        (&#10;                            (&#10;                                commitment_date &lt; effective_date&#10;                                or commitment_date &lt; datetime.datetime.combine(&#10;                                    datetime.date.today(),&#10;                                    datetime.time(0,0,0)&#10;                                ).to_utc().strftime('%Y-%m-%d %H:%M:%S')&#10;                            )&#10;                            and delivery_status in ['pending', 'started']&#10;                            and effective_date &lt;= commitment_date&#10;                            or delivery_status == 'partial'&#10;                        )&#10;                    "/>
+      <field name="expected_date" optional="hide"/>
+      <field name="partner_id" readonly="1"/>
+      <field name="website_id" groups="website.group_multi_website" optional="show"/>
+      <field name="user_id" widget="many2one_avatar_user" optional="show"/>
+      <field name="activity_ids" widget="list_activity" optional="show"/>
+      <field name="team_id" optional="hide"/>
+      <field name="company_id" groups="!base.group_multi_company" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
+      <field name="amount_untaxed" sum="Total Tax Excluded" widget="monetary" optional="hide"/>
+      <field name="amount_tax" sum="Tax Total" widget="monetary" optional="hide"/>
+      <field name="amount_total" sum="Total Tax Included" widget="monetary" decoration-bf="1" decoration-info="invoice_status == 'to invoice'" optional="show"/>
+      <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" optional="hide"/>
+      <field name="warehouse_id" options="{'no_create': True}" groups="stock.group_stock_multi_warehouses" optional="hide" readonly="state == 'sale'"/>
+      <field name="state" decoration-success="state == 'sale'" decoration-info="state == 'draft'" decoration-primary="state == 'sent'" widget="badge" optional="hide"/>
+      <field name="effective_date" column_invisible="True"/>
+      <field name="delivery_status" decoration-success="delivery_status == 'full'" decoration-warning="delivery_status == 'partial'" decoration-info="delivery_status in ['pending', 'started']" widget="badge" optional="hide"/>
+      <field name="invoice_status" decoration-success="invoice_status == 'invoiced'" decoration-info="invoice_status == 'to invoice'" decoration-warning="invoice_status == 'upselling'" widget="badge" optional="show"/>
+      <field name="client_order_ref" optional="hide"/>
+      <field name="validity_date" optional="hide"/>
+    </list>
+    <form>
+      <sheet string="Purchase Line and Vendor Bill line matching view">
+        <group>
+          <group>
+            <field name="pol_id"/>
+            <field name="company_id"/>
+            <field name="product_id"/>
+            <field name="line_uom_id"/>
+            <field name="purchase_order_id"/>
+            <field name="line_amount_untaxed"/>
+            <field name="state"/>
+            <field name="product_uom_qty"/>
+            <field name="billed_amount_untaxed"/>
+            <field name="reference"/>
+          </group>
+          <group>
+            <field name="aml_id"/>
+            <field name="partner_id"/>
+            <field name="line_qty"/>
+            <field name="qty_invoiced"/>
+            <field name="account_move_id"/>
+            <field name="currency_id"/>
+            <field name="product_uom_id"/>
+            <field name="product_uom_price"/>
+            <field name="purchase_amount_untaxed"/>
+          </group>
+        </group>
+        <group>
+          <separator/>
+        </group>
+      </sheet>
+    </form>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <list class="o_sale_order" string="Sales Orders" sample="1" decoration-muted="state == 'cancel'">
+      <header>
+        <button name="351" type="action" string="Create Invoices" class="btn-secondary"/>
+      </header>
+      <field name="message_needaction" column_invisible="True"/>
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" string="Number" readonly="1" decoration-bf="1"/>
+      <field name="date_order" optional="show" readonly="state in ['cancel', 'sale']"/>
+      <field name="commitment_date" optional="hide" decoration-danger="&#10;                        (&#10;                            (&#10;                                commitment_date &lt; effective_date&#10;                                or commitment_date &lt; datetime.datetime.combine(&#10;                                    datetime.date.today(),&#10;                                    datetime.time(0,0,0)&#10;                                ).to_utc().strftime('%Y-%m-%d %H:%M:%S')&#10;                            )&#10;                            and delivery_status in ['pending', 'started']&#10;                            and effective_date &lt;= commitment_date&#10;                            or delivery_status == 'partial'&#10;                        )&#10;                    "/>
+      <field name="expected_date" optional="hide"/>
+      <field name="partner_id" readonly="1"/>
+      <field name="website_id" groups="website.group_multi_website" optional="show"/>
+      <field name="user_id" widget="many2one_avatar_user" optional="show"/>
+      <field name="activity_ids" widget="list_activity" optional="show"/>
+      <field name="team_id" optional="hide"/>
+      <field name="company_id" groups="!base.group_multi_company" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
+      <field name="amount_untaxed" sum="Total Tax Excluded" widget="monetary" optional="hide"/>
+      <field name="amount_tax" sum="Tax Total" widget="monetary" optional="hide"/>
+      <field name="amount_total" sum="Total Tax Included" widget="monetary" decoration-bf="1" decoration-info="invoice_status == 'to invoice'" optional="show"/>
+      <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" optional="hide"/>
+      <field name="warehouse_id" options="{'no_create': True}" groups="stock.group_stock_multi_warehouses" optional="hide" readonly="state == 'sale'"/>
+      <field name="state" decoration-success="state == 'sale'" decoration-info="state == 'draft'" decoration-primary="state == 'sent'" widget="badge" optional="hide"/>
+      <field name="effective_date" column_invisible="True"/>
+      <field name="delivery_status" decoration-success="delivery_status == 'full'" decoration-warning="delivery_status == 'partial'" decoration-info="delivery_status in ['pending', 'started']" widget="badge" optional="hide"/>
+      <field name="invoice_status" decoration-success="invoice_status == 'invoiced'" decoration-info="invoice_status == 'to invoice'" decoration-warning="invoice_status == 'upselling'" widget="badge" optional="show"/>
+      <field name="client_order_ref" optional="hide"/>
+      <field name="validity_date" optional="hide"/>
+    </list>
+    <list name="move_line_tree" string="Journal Items" create="false" edit="true" expand="context.get('expand', False)" multi_edit="1" sample="1" js_class="account_move_line_list">
+      <field name="move_id" column_invisible="True"/>
+      <field name="invoice_date" string="Invoice Date" optional="hide"/>
+      <field name="date" readonly="1"/>
+      <field name="company_id" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" readonly="1" optional="hide"/>
+      <field name="journal_id" readonly="1" options="{&quot;no_open&quot;:True}" optional="hide"/>
+      <field name="move_name" string="Journal Entry" widget="open_move_widget"/>
+      <field name="account_id" options="{'no_open': True, 'no_create': True}" domain="[('deprecated', '=', False)]" groups="account.group_account_readonly"/>
+      <field name="partner_id" optional="show" readonly="move_type != 'entry'"/>
+      <field name="ref" optional="hide" readonly="False"/>
+      <field name="product_id" readonly="1" optional="hide"/>
+      <field name="name" optional="show"/>
+      <field name="deferred_start_date" optional="hide" readonly="has_deferred_moves"/>
+      <field name="deferred_end_date" optional="hide" readonly="has_deferred_moves"/>
+      <field name="analytic_distribution" widget="analytic_distribution" groups="analytic.group_analytic_accounting" optional="hide" options="{'product_field': 'product_id', 'account_field': 'account_id', 'force_applicability': 'optional'}"/>
+      <field name="tax_ids" widget="many2many_tags" optional="hide" readonly="1"/>
+      <field name="amount_currency" string="In Currency" groups="base.group_multi_currency" optional="hide" readonly="1" invisible="is_same_currency"/>
+      <field name="currency_id" groups="base.group_multi_currency" optional="hide" string="Currency" readonly="1" invisible="is_same_currency"/>
+      <field name="debit" sum="Total Debit" readonly="1"/>
+      <field name="credit" sum="Total Credit" readonly="1"/>
+      <field name="tax_tag_ids" string="Tax Grids" options="{'no_create': True, 'no_create_edit': True}" domain="[('applicability', '=', 'taxes')]" widget="many2many_tags" optional="hide"/>
+      <field name="discount_date" string="Discount Date" optional="hide"/>
+      <field name="discount_amount_currency" string="Discount Amount" optional="hide"/>
+      <field name="tax_line_id" string="Originator Tax" optional="hide" readonly="1"/>
+      <field name="date_maturity" readonly="1" optional="hide"/>
+      <field name="balance" sum="Total Balance" optional="hide" readonly="1"/>
+      <field name="matching_number" string="Matching" readonly="1" optional="show" widget="matching_link_widget"/>
+      <field name="amount_residual" sum="Total Residual" string="Residual" optional="hide" readonly="1" invisible="not is_account_reconcile"/>
+      <field name="amount_residual_currency" sum="Total Residual in Currency" string="Residual in Currency" optional="hide" readonly="1" invisible="is_same_currency or not is_account_reconcile" groups="base.group_multi_currency"/>
+      <field name="move_type" column_invisible="True"/>
+      <field name="parent_state" column_invisible="True"/>
+      <field name="account_type" column_invisible="True"/>
+      <field name="statement_line_id" column_invisible="True"/>
+      <field name="company_currency_id" column_invisible="True"/>
+      <field name="is_same_currency" column_invisible="True"/>
+      <field name="is_account_reconcile" column_invisible="True"/>
+      <field name="sequence" column_invisible="True"/>
+      <groupby name="partner_id">
+        <button name="edit" type="edit" icon="fa-edit" title="Edit"/>
+      </groupby>
+      <header>
+        <button name="action_reconcile" type="object" string="Reconcile" groups="account.group_account_user" data-hotkey="r"/>
+        <button name="turn_as_asset" type="object" string="Create Asset" groups="account.group_account_user" data-hotkey="c"/>
+      </header>
+      <field name="is_account_reconcile" column_invisible="True"/>
+      <field name="has_deferred_moves" column_invisible="True"/>
+    </list>
+    <list string="Product" multi_edit="1" sample="1">
+      <header>
+        <button string="Print Labels" type="object" name="action_open_label_layout"/>
+      </header>
+      <field name="product_variant_count" column_invisible="True" invisible="False"/>
+      <field name="sale_ok" column_invisible="True" invisible="False"/>
+      <field name="currency_id" column_invisible="True" invisible="False"/>
+      <field name="cost_currency_id" column_invisible="True"/>
+      <field name="is_favorite" widget="boolean_favorite" optional="show" nolabel="1" column_invisible="True"/>
+      <field name="name" string="Product Name" optional="show"/>
+      <field name="barcode" optional="show"/>
+      <field name="combo_ids" optional="show"/>
+      <field name="default_code" optional="show"/>
+      <field name="default_code" optional="hide" column_invisible="True"/>
+      <field name="responsible_id" widget="many2one_avatar_user" optional="hide" groups="stock.group_stock_user" column_invisible="True"/>
+      <field name="website_id" groups="website.group_multi_website" optional="hide"/>
+      <field name="product_tag_ids" widget="many2many_tags" optional="show" column_invisible="True"/>
+      <field name="website_ribbon_id" optional="hide" column_invisible="True"/>
+      <field name="barcode" optional="hide" readonly="product_variant_count != 1" column_invisible="True"/>
+      <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company" optional="hide"/>
+      <field name="list_price" string="Sales Price" widget="monetary" options="{'currency_field': 'currency_id'}" optional="show" decoration-muted="not sale_ok"/>
+      <field optional="show" name="x_studio_" class="Prix golf"/>
+      <field name="standard_price" widget="monetary" options="{'currency_field': 'cost_currency_id'}" optional="show" readonly="1"/>
+      <field name="property_account_creditor_price_difference" optional="show"/>
+      <field name="pos_categ_ids" widget="many2many_tags" groups="point_of_sale.group_pos_user" optional="hide" string="POS Product Category"/>
+      <field name="available_in_pos" groups="point_of_sale.group_pos_user" optional="hide"/>
+      <field name="categ_id" optional="hide" column_invisible="True"/>
+      <field name="type" optional="hide" readonly="1" column_invisible="True"/>
+      <field name="show_on_hand_qty_status_button" column_invisible="True" groups="stock.group_stock_user"/>
+      <field name="qty_available" invisible="False" string="On Hand" optional="show" decoration-danger="qty_available &lt; 0" groups="stock.group_stock_user" column_invisible="False"/>
+      <field name="x_studio_monetary_field_m5_1jbnb0abu" optional="show"/>
+      <field name="x_studio_marge_" optional="show"/>
+      <field name="virtual_available" invisible="False" string="Forecasted" optional="show" decoration-danger="virtual_available &lt; 0" decoration-bf="1" groups="stock.group_stock_user" column_invisible="False"/>
+      <field name="uom_id" string="Unit" readonly="1" optional="show" groups="uom.group_uom"/>
+      <field name="active" column_invisible="True"/>
+      <field name="activity_exception_decoration" widget="activity_exception"/>
+    </list>
+    <list string="POS Orders" create="0" sample="1" decoration-info="state == 'draft'" decoration-muted="state == 'cancel'" duplicate="0">
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" decoration-bf="1"/>
+      <field name="session_id" readonly="state != 'draft'"/>
+      <field name="date_order"/>
+      <field name="config_id"/>
+      <field name="pos_reference"/>
+      <field name="tracking_number" optional="hide"/>
+      <field name="partner_id"/>
+      <field name="employee_id" widget="many2one_avatar_employee" readonly="state in ['done', 'invoiced']"/>
+      <field name="amount_total" sum="Amount total" widget="monetary" decoration-bf="1"/>
+      <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state not in ('draft','cancel')"/>
+      <field name="is_edited" readonly="1" optional="hide"/>
+    </list>
+    <list class="o_sale_order" string="Sales Orders" sample="1" decoration-muted="state == 'cancel'">
+      <header>
+        <button name="351" type="action" string="Create Invoices" class="btn-secondary"/>
+      </header>
+      <field name="message_needaction" column_invisible="True"/>
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" string="Number" readonly="1" decoration-bf="1"/>
+      <field name="date_order" optional="show" readonly="state in ['cancel', 'sale']"/>
+      <field name="commitment_date" optional="hide" decoration-danger="&#10;                        (&#10;                            (&#10;                                commitment_date &lt; effective_date&#10;                                or commitment_date &lt; datetime.datetime.combine(&#10;                                    datetime.date.today(),&#10;                                    datetime.time(0,0,0)&#10;                                ).to_utc().strftime('%Y-%m-%d %H:%M:%S')&#10;                            )&#10;                            and delivery_status in ['pending', 'started']&#10;                            and effective_date &lt;= commitment_date&#10;                            or delivery_status == 'partial'&#10;                        )&#10;                    "/>
+      <field name="expected_date" optional="hide"/>
+      <field name="partner_id" readonly="1"/>
+      <field name="website_id" groups="website.group_multi_website" optional="show"/>
+      <field name="user_id" widget="many2one_avatar_user" optional="show"/>
+      <field name="activity_ids" widget="list_activity" optional="show"/>
+      <field name="team_id" optional="hide"/>
+      <field name="company_id" groups="!base.group_multi_company" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
+      <field name="amount_untaxed" sum="Total Tax Excluded" widget="monetary" optional="hide"/>
+      <field name="amount_tax" sum="Tax Total" widget="monetary" optional="hide"/>
+      <field name="amount_total" sum="Total Tax Included" widget="monetary" decoration-bf="1" decoration-info="invoice_status == 'to invoice'" optional="show"/>
+      <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" optional="hide"/>
+      <field name="warehouse_id" options="{'no_create': True}" groups="stock.group_stock_multi_warehouses" optional="hide" readonly="state == 'sale'"/>
+      <field name="state" decoration-success="state == 'sale'" decoration-info="state == 'draft'" decoration-primary="state == 'sent'" widget="badge" optional="hide"/>
+      <field name="effective_date" column_invisible="True"/>
+      <field name="delivery_status" decoration-success="delivery_status == 'full'" decoration-warning="delivery_status == 'partial'" decoration-info="delivery_status in ['pending', 'started']" widget="badge" optional="hide"/>
+      <field name="invoice_status" decoration-success="invoice_status == 'invoiced'" decoration-info="invoice_status == 'to invoice'" decoration-warning="invoice_status == 'upselling'" widget="badge" optional="show"/>
+      <field name="client_order_ref" optional="hide"/>
+      <field name="validity_date" optional="hide"/>
+    </list>
+    <list>
+      <field name="x_studio_sequence" widget="handle"/>
+      <field name="x_name"/>
+    </list>
+    <list name="move_line_tree" string="Journal Items" create="false" edit="true" expand="context.get('expand', False)" multi_edit="1" sample="1" js_class="account_move_line_list">
+      <field name="move_id" column_invisible="True"/>
+      <field name="invoice_date" string="Invoice Date" optional="hide"/>
+      <field name="date" readonly="1"/>
+      <field name="company_id" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" readonly="1" optional="hide"/>
+      <field name="journal_id" readonly="1" options="{&quot;no_open&quot;:True}" optional="hide"/>
+      <field name="move_name" string="Journal Entry" widget="open_move_widget"/>
+      <field name="account_id" options="{'no_open': True, 'no_create': True}" domain="[('deprecated', '=', False)]" groups="account.group_account_readonly"/>
+      <field name="partner_id" optional="show" readonly="move_type != 'entry'"/>
+      <field name="ref" optional="hide" readonly="False"/>
+      <field name="product_id" readonly="1" optional="hide"/>
+      <field name="name" optional="show"/>
+      <field name="deferred_start_date" optional="hide" readonly="has_deferred_moves"/>
+      <field name="deferred_end_date" optional="hide" readonly="has_deferred_moves"/>
+      <field name="analytic_distribution" widget="analytic_distribution" groups="analytic.group_analytic_accounting" optional="hide" options="{'product_field': 'product_id', 'account_field': 'account_id', 'force_applicability': 'optional'}"/>
+      <field name="tax_ids" widget="many2many_tags" optional="hide" readonly="1"/>
+      <field name="amount_currency" string="In Currency" groups="base.group_multi_currency" optional="hide" readonly="1" invisible="is_same_currency"/>
+      <field name="currency_id" groups="base.group_multi_currency" optional="hide" string="Currency" readonly="1" invisible="is_same_currency"/>
+      <field name="debit" sum="Total Debit" readonly="1"/>
+      <field name="credit" sum="Total Credit" readonly="1"/>
+      <field name="tax_tag_ids" string="Tax Grids" options="{'no_create': True, 'no_create_edit': True}" domain="[('applicability', '=', 'taxes')]" widget="many2many_tags" optional="hide"/>
+      <field name="discount_date" string="Discount Date" optional="hide"/>
+      <field name="discount_amount_currency" string="Discount Amount" optional="hide"/>
+      <field name="tax_line_id" string="Originator Tax" optional="hide" readonly="1"/>
+      <field name="date_maturity" readonly="1" optional="hide"/>
+      <field name="balance" sum="Total Balance" optional="hide" readonly="1"/>
+      <field name="matching_number" string="Matching" readonly="1" optional="show" widget="matching_link_widget"/>
+      <field name="amount_residual" sum="Total Residual" string="Residual" optional="hide" readonly="1" invisible="not is_account_reconcile"/>
+      <field name="amount_residual_currency" sum="Total Residual in Currency" string="Residual in Currency" optional="hide" readonly="1" invisible="is_same_currency or not is_account_reconcile" groups="base.group_multi_currency"/>
+      <field name="move_type" column_invisible="True"/>
+      <field name="parent_state" column_invisible="True"/>
+      <field name="account_type" column_invisible="True"/>
+      <field name="statement_line_id" column_invisible="True"/>
+      <field name="company_currency_id" column_invisible="True"/>
+      <field name="is_same_currency" column_invisible="True"/>
+      <field name="is_account_reconcile" column_invisible="True"/>
+      <field name="sequence" column_invisible="True"/>
+      <groupby name="partner_id">
+        <button name="edit" type="edit" icon="fa-edit" title="Edit"/>
+      </groupby>
+      <header>
+        <button name="action_reconcile" type="object" string="Reconcile" groups="account.group_account_user" data-hotkey="r"/>
+        <button name="turn_as_asset" type="object" string="Create Asset" groups="account.group_account_user" data-hotkey="c"/>
+      </header>
+      <field name="is_account_reconcile" column_invisible="True"/>
+      <field name="has_deferred_moves" column_invisible="True"/>
+    </list>
+    <list string="POS Orders" create="0" sample="1" decoration-info="state == 'draft'" decoration-muted="state == 'cancel'" duplicate="0">
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" decoration-bf="1"/>
+      <field name="session_id" readonly="state != 'draft'"/>
+      <field name="date_order"/>
+      <field name="config_id"/>
+      <field name="pos_reference"/>
+      <field name="tracking_number" optional="hide"/>
+      <field name="partner_id"/>
+      <field name="employee_id" widget="many2one_avatar_employee" readonly="state in ['done', 'invoiced']"/>
+      <field name="amount_total" sum="Amount total" widget="monetary" decoration-bf="1"/>
+      <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state not in ('draft','cancel')"/>
+      <field name="is_edited" readonly="1" optional="hide"/>
+    </list>
+    <list class="o_sale_order" string="Sales Orders" sample="1" decoration-muted="state == 'cancel'">
+      <header>
+        <button name="351" type="action" string="Create Invoices" class="btn-secondary"/>
+      </header>
+      <field name="message_needaction" column_invisible="True"/>
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" string="Number" readonly="1" decoration-bf="1"/>
+      <field name="date_order" optional="show" readonly="state in ['cancel', 'sale']"/>
+      <field name="commitment_date" optional="hide" decoration-danger="&#10;                        (&#10;                            (&#10;                                commitment_date &lt; effective_date&#10;                                or commitment_date &lt; datetime.datetime.combine(&#10;                                    datetime.date.today(),&#10;                                    datetime.time(0,0,0)&#10;                                ).to_utc().strftime('%Y-%m-%d %H:%M:%S')&#10;                            )&#10;                            and delivery_status in ['pending', 'started']&#10;                            and effective_date &lt;= commitment_date&#10;                            or delivery_status == 'partial'&#10;                        )&#10;                    "/>
+      <field name="expected_date" optional="hide"/>
+      <field name="partner_id" readonly="1"/>
+      <field name="website_id" groups="website.group_multi_website" optional="show"/>
+      <field name="user_id" widget="many2one_avatar_user" optional="show"/>
+      <field name="activity_ids" widget="list_activity" optional="show"/>
+      <field name="team_id" optional="hide"/>
+      <field name="company_id" groups="!base.group_multi_company" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
+      <field name="amount_untaxed" sum="Total Tax Excluded" widget="monetary" optional="hide"/>
+      <field name="amount_tax" sum="Tax Total" widget="monetary" optional="hide"/>
+      <field name="amount_total" sum="Total Tax Included" widget="monetary" decoration-bf="1" decoration-info="invoice_status == 'to invoice'" optional="show"/>
+      <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" optional="hide"/>
+      <field name="warehouse_id" options="{'no_create': True}" groups="stock.group_stock_multi_warehouses" optional="hide" readonly="state == 'sale'"/>
+      <field name="state" decoration-success="state == 'sale'" decoration-info="state == 'draft'" decoration-primary="state == 'sent'" widget="badge" optional="hide"/>
+      <field name="effective_date" column_invisible="True"/>
+      <field name="delivery_status" decoration-success="delivery_status == 'full'" decoration-warning="delivery_status == 'partial'" decoration-info="delivery_status in ['pending', 'started']" widget="badge" optional="hide"/>
+      <field name="invoice_status" decoration-success="invoice_status == 'invoiced'" decoration-info="invoice_status == 'to invoice'" decoration-warning="invoice_status == 'upselling'" widget="badge" optional="show"/>
+      <field name="client_order_ref" optional="hide"/>
+      <field name="validity_date" optional="hide"/>
+    </list>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <form>
+      <sheet string="Purchase Line and Vendor Bill line matching view">
+        <group>
+          <group>
+            <field name="pol_id"/>
+            <field name="company_id"/>
+            <field name="product_id"/>
+            <field name="line_uom_id"/>
+            <field name="purchase_order_id"/>
+            <field name="line_amount_untaxed"/>
+            <field name="state"/>
+            <field name="product_uom_qty"/>
+            <field name="billed_amount_untaxed"/>
+            <field name="reference"/>
+          </group>
+          <group>
+            <field name="aml_id"/>
+            <field name="partner_id"/>
+            <field name="line_qty"/>
+            <field name="qty_invoiced"/>
+            <field name="account_move_id"/>
+            <field name="currency_id"/>
+            <field name="product_uom_id"/>
+            <field name="product_uom_price"/>
+            <field name="purchase_amount_untaxed"/>
+          </group>
+        </group>
+        <group>
+          <separator/>
+        </group>
+      </sheet>
+    </form>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <list>
+      <field name="x_studio_sequence" widget="handle"/>
+      <field name="x_name"/>
+    </list>
+    <list>
+      <field name="x_studio_sequence" widget="handle"/>
+      <field name="x_name"/>
+    </list>
+    <list string="POS Orders" create="0" sample="1" decoration-info="state == 'draft'" decoration-muted="state == 'cancel'" duplicate="0">
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" decoration-bf="1"/>
+      <field name="session_id" readonly="state != 'draft'"/>
+      <field name="date_order"/>
+      <field name="config_id"/>
+      <field name="pos_reference"/>
+      <field name="tracking_number" optional="hide"/>
+      <field name="partner_id"/>
+      <field name="employee_id" widget="many2one_avatar_employee" readonly="state in ['done', 'invoiced']"/>
+      <field name="amount_total" sum="Amount total" widget="monetary" decoration-bf="1"/>
+      <field name="state" widget="badge" decoration-info="state == 'draft'" decoration-success="state not in ('draft','cancel')"/>
+      <field name="is_edited" readonly="1" optional="hide"/>
+    </list>
+    <list>
+      <field name="x_studio_sequence" widget="handle"/>
+      <field name="x_name"/>
+    </list>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]/list[1]/field[2]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_text_field_4sc_1jgn8rd9c"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_char_field_5so_1jgn8s2ek"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="type_name"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="statement_line_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="source_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="options">{"no_open":true}</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="options">{"no_open":false}</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="amount_total"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_selection_field_5la_1jgn93l1t"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_90o_1jgn97l7u"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2many_field_990_1jgn9e57f"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2one_field_7uo_1jgn9fc6v"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_184_1jgn9gjr8"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">many2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="Nouvelle page" name="studio_page_8so_1jgn9j7oh">
+      <group name="studio_group_8so">
+        <group name="studio_group_8so_left"/>
+        <group name="studio_group_8so_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_one2many_field_40g_1jgn9jrkg"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_one2many_field_bs_1jgn9kbb8"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_one2many_field_33r_1jgn9lp7a"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="attributes">
+    <attribute name="widget">many2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[5]" position="after">
+    <field name="company_currency_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[5]" position="after">
+    <field name="tax_base_amount" optional="show"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[5]" position="after">
+    <field name="price_unit" optional="show"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="Nouvelle page" name="studio_page_7kv_1jh0tqflo">
+      <group name="studio_group_7kv">
+        <group name="studio_group_7kv_left"/>
+        <group name="studio_group_7kv_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="attributes">
+    <attribute name="string">Ligne de commande</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]" position="after">
+    <field name="x_studio_produit"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">many2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_related_field_8c5_1jh0u0hoa"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_one2many_field_7m3_1jh0u7qf0"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field widget="many2many_tags" name="x_studio_many2many_field_6rp_1jh0u90h9"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="attributes">
+    <attribute name="widget">one2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="attributes">
+    <attribute name="string">PRODUIT</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_one2many_field_e3_1jh0uc0e8"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_related_field_4h8_1jh0ucj4o"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="attributes">
+    <attribute name="widget">many2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field widget="priority" name="x_studio_selection_field_9hg_1jh0udgg7"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_selection_field_2k1_1jh0udsf7"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_html_field_61g_1jh0ufoe1"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="attributes">
+    <attribute name="widget">text</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_char_field_22g_1jh0ugebf"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field widget="file" filename="x_studio_binary_field_10n_1jh0ugt18_filename" name="x_studio_binary_field_10n_1jh0ugt18"/>
+  </xpath>
+  <xpath expr="//field[@name='x_studio_binary_field_10n_1jh0ugt18'][not(ancestor::field)]" position="after">
+    <field widget="file" invisible="True" name="x_studio_binary_field_10n_1jh0ugt18_filename"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_8mc_1jh0uiep8"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_char_field_1hm_1jh0uknco"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="options">{"placeholder_field":"ref"}</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_integer_field_6c9_1jh0umm1g"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2many_field_ou_1jh0unsn0"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2many_field_101_1jh0uptg8"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_related_field_5qi_1jh0us10o"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[2]" position="after">
+    <field optional="show" name="x_studio_char_field_26s_1jh0v23r8"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[3]" position="attributes">
+    <attribute name="widget">reference</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[3]" position="attributes">
+    <attribute name="options">{"model_field":"purchase_order_id"}</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[3]" position="attributes">
+    <attribute name="widget">char</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[3]" position="attributes">
+    <attribute name="options">{"model_field":"purchase_order_id","placeholder_field":"name"}</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[3]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[2]" position="after">
+    <field name="product_id" optional="show"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[2]" position="before">
+    <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[3]" position="move"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[2]" position="after">
+    <field optional="show" name="x_studio_many2many_field_168_1jh0vbj8o"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[3]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="Nouvelle page" name="studio_page_1e9_1jh10rfc2">
+      <group name="studio_group_1e9">
+        <group name="studio_group_1e9_left"/>
+        <group name="studio_group_1e9_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_1g0_1jh10skr1"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2many_field_29t_1jh10va8a"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2one_field_ik_1jh1102k1"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_related_field_4f8_1jh1141li"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_gd_1jh118hq9"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="attributes">
+    <attribute name="string">Ligne de commande</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2one_field_5gb_1jh1jcv1m"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="required">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="force_save">1</attribute>
+    <attribute name="readonly">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">selection</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">selection_badge</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">many2one</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="domain">[]</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2many_field_3k7_1jh1jeppm"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/group[1]" position="after">
+    <notebook name="studio_notebook_88m_1jh1jh4o7">
+      <page string="New Page" name="studio_page_88m">
+        <group name="studio_group_88m">
+          <group name="studio_group_88m_left"/>
+          <group name="studio_group_88m_right"/>
+        </group>
+      </page>
+    </notebook>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[1]" position="inside">
+    <field name="x_studio_produit"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[1]" position="inside">
+    <field name="x_studio_many2many_field_6rp_1jh0u90h9"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[2]" position="inside">
+    <field name="amount_residual"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[1]" position="inside">
+    <field name="amount_untaxed_signed"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="attributes">
+    <attribute name="string">Ligne de commande</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[2]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[1]" position="attributes">
+    <attribute name="string">Produit</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[1]" position="inside">
+    <field name="x_studio_one2many_field_6rb_1jh1jqh0v"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]" position="inside">
+    <field name="x_studio_many2one_field_2dj_1jh1jrcd7"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]" position="inside">
+    <field name="x_studio_many2many_field_72a_1jh1jrrrn"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/field[1]" position="inside">
+    <list>
+      <field name="x_studio_sequence" widget="handle"/>
+      <field name="x_name"/>
+    </list>
+    <list string="Purchase Bill Lines" decoration-info="pol_id != False" decoration-muted="state == 'draft'" editable="bottom" edit="1" type="object">
+      <header>
+        <button name="action_match_lines" type="object" string="Match" groups="account.group_account_invoice" class="btn btn-primary"/>
+        <button name="action_add_to_po" type="object" string="Add to PO" groups="purchase.group_purchase_user"/>
+      </header>
+      <field name="partner_id" string="Vendor" optional="hidden"/>
+      <field name="reference" widget="open_match_line_widget"/>
+      <field name="display_name" string="Product Description" decoration-it="not product_id"/>
+      <field name="product_uom_qty" string="Qty"/>
+      <field name="product_uom_id" groups="uom.group_uom" string="Unit"/>
+      <field name="product_uom_price" string="Price"/>
+      <field name="qty_invoiced" optional="hidden"/>
+      <field name="billed_amount_untaxed" widget="monetary_no_zero" sum="Total Billed" string="Billed"/>
+      <field name="purchase_amount_untaxed" widget="monetary_no_zero" sum="Total Purchased" string="Purchased"/>
+      <field name="currency_id" column_invisible="1"/>
+    </list>
+    <list class="o_sale_order" string="Sales Orders" sample="1" decoration-muted="state == 'cancel'">
+      <header>
+        <button name="351" type="action" string="Create Invoices" class="btn-secondary"/>
+      </header>
+      <field name="message_needaction" column_invisible="True"/>
+      <field name="currency_id" column_invisible="True"/>
+      <field name="name" string="Number" readonly="1" decoration-bf="1"/>
+      <field name="date_order" optional="show" readonly="state in ['cancel', 'sale']"/>
+      <field name="commitment_date" optional="hide" decoration-danger="&#10;                        (&#10;                            (&#10;                                commitment_date &lt; effective_date&#10;                                or commitment_date &lt; datetime.datetime.combine(&#10;                                    datetime.date.today(),&#10;                                    datetime.time(0,0,0)&#10;                                ).to_utc().strftime('%Y-%m-%d %H:%M:%S')&#10;                            )&#10;                            and delivery_status in ['pending', 'started']&#10;                            and effective_date &lt;= commitment_date&#10;                            or delivery_status == 'partial'&#10;                        )&#10;                    "/>
+      <field name="expected_date" optional="hide"/>
+      <field name="partner_id" readonly="1"/>
+      <field name="website_id" groups="website.group_multi_website" optional="show"/>
+      <field name="user_id" widget="many2one_avatar_user" optional="show"/>
+      <field name="activity_ids" widget="list_activity" optional="show"/>
+      <field name="team_id" optional="hide"/>
+      <field name="company_id" groups="!base.group_multi_company" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" optional="show" readonly="1"/>
+      <field name="amount_untaxed" sum="Total Tax Excluded" widget="monetary" optional="hide"/>
+      <field name="amount_tax" sum="Tax Total" widget="monetary" optional="hide"/>
+      <field name="amount_total" sum="Total Tax Included" widget="monetary" decoration-bf="1" decoration-info="invoice_status == 'to invoice'" optional="show"/>
+      <field name="tag_ids" widget="many2many_tags" options="{'color_field': 'color'}" optional="hide"/>
+      <field name="warehouse_id" options="{'no_create': True}" groups="stock.group_stock_multi_warehouses" optional="hide" readonly="state == 'sale'"/>
+      <field name="state" decoration-success="state == 'sale'" decoration-info="state == 'draft'" decoration-primary="state == 'sent'" widget="badge" optional="hide"/>
+      <field name="effective_date" column_invisible="True"/>
+      <field name="delivery_status" decoration-success="delivery_status == 'full'" decoration-warning="delivery_status == 'partial'" decoration-info="delivery_status in ['pending', 'started']" widget="badge" optional="hide"/>
+      <field name="invoice_status" decoration-success="invoice_status == 'invoiced'" decoration-info="invoice_status == 'to invoice'" decoration-warning="invoice_status == 'upselling'" widget="badge" optional="show"/>
+      <field name="client_order_ref" optional="hide"/>
+      <field name="validity_date" optional="hide"/>
+    </list>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]" position="inside">
+    <field name="x_studio_one2many_field_5at_1jh1jtgon"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/field[1]" position="attributes">
+    <attribute name="widget">many2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/field[1]" position="attributes">
+    <attribute name="required">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/field[1]" position="attributes">
+    <attribute name="force_save">1</attribute>
+    <attribute name="readonly">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]" position="inside">
+    <field name="x_studio_char_field_2ga_1jh1jvscg"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]" position="inside">
+    <field name="x_studio_related_field_44h_1jh1k0f9f"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]" position="inside">
+    <field widget="many2many_tags" name="x_studio_many2many_field_1pu_1jh1k20go"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]" position="inside">
+    <field name="x_studio_one2many_field_2ia_1jh1k3068"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]" position="inside">
+    <field name="x_studio_selection_field_ho_1jh1k42h0"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="x_studio_many2many_field_6rp_1jh0u90h9"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="inside">
+    <list name="move_line_tree" string="Journal Items" create="false" edit="true" expand="context.get('expand', False)" multi_edit="1" sample="1" js_class="account_move_line_list">
+      <field name="move_id" column_invisible="True"/>
+      <field name="invoice_date" string="Invoice Date" optional="hide"/>
+      <field name="date" readonly="1"/>
+      <field name="company_id" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" readonly="1" optional="hide"/>
+      <field name="journal_id" readonly="1" options="{&quot;no_open&quot;:True}" optional="hide"/>
+      <field name="move_name" string="Journal Entry" widget="open_move_widget"/>
+      <field name="account_id" options="{'no_open': True, 'no_create': True}" domain="[('deprecated', '=', False)]" groups="account.group_account_readonly"/>
+      <field name="partner_id" optional="show" readonly="move_type != 'entry'"/>
+      <field name="ref" optional="hide" readonly="False"/>
+      <field name="product_id" readonly="1" optional="hide"/>
+      <field name="name" optional="show"/>
+      <field name="deferred_start_date" optional="hide" readonly="has_deferred_moves"/>
+      <field name="deferred_end_date" optional="hide" readonly="has_deferred_moves"/>
+      <field name="analytic_distribution" widget="analytic_distribution" groups="analytic.group_analytic_accounting" optional="hide" options="{'product_field': 'product_id', 'account_field': 'account_id', 'force_applicability': 'optional'}"/>
+      <field name="tax_ids" widget="many2many_tags" optional="hide" readonly="1"/>
+      <field name="amount_currency" string="In Currency" groups="base.group_multi_currency" optional="hide" readonly="1" invisible="is_same_currency"/>
+      <field name="currency_id" groups="base.group_multi_currency" optional="hide" string="Currency" readonly="1" invisible="is_same_currency"/>
+      <field name="debit" sum="Total Debit" readonly="1"/>
+      <field name="credit" sum="Total Credit" readonly="1"/>
+      <field name="tax_tag_ids" string="Tax Grids" options="{'no_create': True, 'no_create_edit': True}" domain="[('applicability', '=', 'taxes')]" widget="many2many_tags" optional="hide"/>
+      <field name="discount_date" string="Discount Date" optional="hide"/>
+      <field name="discount_amount_currency" string="Discount Amount" optional="hide"/>
+      <field name="tax_line_id" string="Originator Tax" optional="hide" readonly="1"/>
+      <field name="date_maturity" readonly="1" optional="hide"/>
+      <field name="balance" sum="Total Balance" optional="hide" readonly="1"/>
+      <field name="matching_number" string="Matching" readonly="1" optional="show" widget="matching_link_widget"/>
+      <field name="amount_residual" sum="Total Residual" string="Residual" optional="hide" readonly="1" invisible="not is_account_reconcile"/>
+      <field name="amount_residual_currency" sum="Total Residual in Currency" string="Residual in Currency" optional="hide" readonly="1" invisible="is_same_currency or not is_account_reconcile" groups="base.group_multi_currency"/>
+      <field name="move_type" column_invisible="True"/>
+      <field name="parent_state" column_invisible="True"/>
+      <field name="account_type" column_invisible="True"/>
+      <field name="statement_line_id" column_invisible="True"/>
+      <field name="company_currency_id" column_invisible="True"/>
+      <field name="is_same_currency" column_invisible="True"/>
+      <field name="is_account_reconcile" column_invisible="True"/>
+      <field name="sequence" column_invisible="True"/>
+      <groupby name="partner_id">
+        <button name="edit" type="edit" icon="fa-edit" title="Edit"/>
+      </groupby>
+      <header>
+        <button name="action_reconcile" type="object" string="Reconcile" groups="account.group_account_user" data-hotkey="r"/>
+        <button name="turn_as_asset" type="object" string="Create Asset" groups="account.group_account_user" data-hotkey="c"/>
+      </header>
+      <field name="is_account_reconcile" column_invisible="True"/>
+      <field name="has_deferred_moves" column_invisible="True"/>
+    </list>
+    <list name="move_line_tree" string="Journal Items" create="false" edit="true" expand="context.get('expand', False)" multi_edit="1" sample="1" js_class="account_move_line_list">
+      <field name="move_id" column_invisible="True"/>
+      <field name="invoice_date" string="Invoice Date" optional="hide"/>
+      <field name="date" readonly="1"/>
+      <field name="company_id" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" readonly="1" optional="hide"/>
+      <field name="journal_id" readonly="1" options="{&quot;no_open&quot;:True}" optional="hide"/>
+      <field name="move_name" string="Journal Entry" widget="open_move_widget"/>
+      <field name="account_id" options="{'no_open': True, 'no_create': True}" domain="[('deprecated', '=', False)]" groups="account.group_account_readonly"/>
+      <field name="partner_id" optional="show" readonly="move_type != 'entry'"/>
+      <field name="ref" optional="hide" readonly="False"/>
+      <field name="product_id" readonly="1" optional="hide"/>
+      <field name="name" optional="show"/>
+      <field name="deferred_start_date" optional="hide" readonly="has_deferred_moves"/>
+      <field name="deferred_end_date" optional="hide" readonly="has_deferred_moves"/>
+      <field name="analytic_distribution" widget="analytic_distribution" groups="analytic.group_analytic_accounting" optional="hide" options="{'product_field': 'product_id', 'account_field': 'account_id', 'force_applicability': 'optional'}"/>
+      <field name="tax_ids" widget="many2many_tags" optional="hide" readonly="1"/>
+      <field name="amount_currency" string="In Currency" groups="base.group_multi_currency" optional="hide" readonly="1" invisible="is_same_currency"/>
+      <field name="currency_id" groups="base.group_multi_currency" optional="hide" string="Currency" readonly="1" invisible="is_same_currency"/>
+      <field name="debit" sum="Total Debit" readonly="1"/>
+      <field name="credit" sum="Total Credit" readonly="1"/>
+      <field name="tax_tag_ids" string="Tax Grids" options="{'no_create': True, 'no_create_edit': True}" domain="[('applicability', '=', 'taxes')]" widget="many2many_tags" optional="hide"/>
+      <field name="discount_date" string="Discount Date" optional="hide"/>
+      <field name="discount_amount_currency" string="Discount Amount" optional="hide"/>
+      <field name="tax_line_id" string="Originator Tax" optional="hide" readonly="1"/>
+      <field name="date_maturity" readonly="1" optional="hide"/>
+      <field name="balance" sum="Total Balance" optional="hide" readonly="1"/>
+      <field name="matching_number" string="Matching" readonly="1" optional="show" widget="matching_link_widget"/>
+      <field name="amount_residual" sum="Total Residual" string="Residual" optional="hide" readonly="1" invisible="not is_account_reconcile"/>
+      <field name="amount_residual_currency" sum="Total Residual in Currency" string="Residual in Currency" optional="hide" readonly="1" invisible="is_same_currency or not is_account_reconcile" groups="base.group_multi_currency"/>
+      <field name="move_type" column_invisible="True"/>
+      <field name="parent_state" column_invisible="True"/>
+      <field name="account_type" column_invisible="True"/>
+      <field name="statement_line_id" column_invisible="True"/>
+      <field name="company_currency_id" column_invisible="True"/>
+      <field name="is_same_currency" column_invisible="True"/>
+      <field name="is_account_reconcile" column_invisible="True"/>
+      <field name="sequence" column_invisible="True"/>
+      <groupby name="partner_id">
+        <button name="edit" type="edit" icon="fa-edit" title="Edit"/>
+      </groupby>
+      <header>
+        <button name="action_reconcile" type="object" string="Reconcile" groups="account.group_account_user" data-hotkey="r"/>
+        <button name="turn_as_asset" type="object" string="Create Asset" groups="account.group_account_user" data-hotkey="c"/>
+      </header>
+      <field name="is_account_reconcile" column_invisible="True"/>
+      <field name="has_deferred_moves" column_invisible="True"/>
+    </list>
+    <list name="move_line_tree" string="Journal Items" create="false" edit="true" expand="context.get('expand', False)" multi_edit="1" sample="1" js_class="account_move_line_list">
+      <field name="move_id" column_invisible="True"/>
+      <field name="invoice_date" string="Invoice Date" optional="hide"/>
+      <field name="date" readonly="1"/>
+      <field name="company_id" column_invisible="True"/>
+      <field name="company_id" groups="base.group_multi_company" readonly="1" optional="hide"/>
+      <field name="journal_id" readonly="1" options="{&quot;no_open&quot;:True}" optional="hide"/>
+      <field name="move_name" string="Journal Entry" widget="open_move_widget"/>
+      <field name="account_id" options="{'no_open': True, 'no_create': True}" domain="[('deprecated', '=', False)]" groups="account.group_account_readonly"/>
+      <field name="partner_id" optional="show" readonly="move_type != 'entry'"/>
+      <field name="ref" optional="hide" readonly="False"/>
+      <field name="product_id" readonly="1" optional="hide"/>
+      <field name="name" optional="show"/>
+      <field name="deferred_start_date" optional="hide" readonly="has_deferred_moves"/>
+      <field name="deferred_end_date" optional="hide" readonly="has_deferred_moves"/>
+      <field name="analytic_distribution" widget="analytic_distribution" groups="analytic.group_analytic_accounting" optional="hide" options="{'product_field': 'product_id', 'account_field': 'account_id', 'force_applicability': 'optional'}"/>
+      <field name="tax_ids" widget="many2many_tags" optional="hide" readonly="1"/>
+      <field name="amount_currency" string="In Currency" groups="base.group_multi_currency" optional="hide" readonly="1" invisible="is_same_currency"/>
+      <field name="currency_id" groups="base.group_multi_currency" optional="hide" string="Currency" readonly="1" invisible="is_same_currency"/>
+      <field name="debit" sum="Total Debit" readonly="1"/>
+      <field name="credit" sum="Total Credit" readonly="1"/>
+      <field name="tax_tag_ids" string="Tax Grids" options="{'no_create': True, 'no_create_edit': True}" domain="[('applicability', '=', 'taxes')]" widget="many2many_tags" optional="hide"/>
+      <field name="discount_date" string="Discount Date" optional="hide"/>
+      <field name="discount_amount_currency" string="Discount Amount" optional="hide"/>
+      <field name="tax_line_id" string="Originator Tax" optional="hide" readonly="1"/>
+      <field name="date_maturity" readonly="1" optional="hide"/>
+      <field name="balance" sum="Total Balance" optional="hide" readonly="1"/>
+      <field name="matching_number" string="Matching" readonly="1" optional="show" widget="matching_link_widget"/>
+      <field name="amount_residual" sum="Total Residual" string="Residual" optional="hide" readonly="1" invisible="not is_account_reconcile"/>
+      <field name="amount_residual_currency" sum="Total Residual in Currency" string="Residual in Currency" optional="hide" readonly="1" invisible="is_same_currency or not is_account_reconcile" groups="base.group_multi_currency"/>
+      <field name="move_type" column_invisible="True"/>
+      <field name="parent_state" column_invisible="True"/>
+      <field name="account_type" column_invisible="True"/>
+      <field name="statement_line_id" column_invisible="True"/>
+      <field name="company_currency_id" column_invisible="True"/>
+      <field name="is_same_currency" column_invisible="True"/>
+      <field name="is_account_reconcile" column_invisible="True"/>
+      <field name="sequence" column_invisible="True"/>
+      <groupby name="partner_id">
+        <button name="edit" type="edit" icon="fa-edit" title="Edit"/>
+      </groupby>
+      <header>
+        <button name="action_reconcile" type="object" string="Reconcile" groups="account.group_account_user" data-hotkey="r"/>
+        <button name="turn_as_asset" type="object" string="Create Asset" groups="account.group_account_user" data-hotkey="c"/>
+      </header>
+      <field name="is_account_reconcile" column_invisible="True"/>
+      <field name="has_deferred_moves" column_invisible="True"/>
+    </list>
+    <list string="Product" multi_edit="1" sample="1">
+      <header>
+        <button string="Print Labels" type="object" name="action_open_label_layout"/>
+      </header>
+      <field name="product_variant_count" column_invisible="True" invisible="False"/>
+      <field name="sale_ok" column_invisible="True" invisible="False"/>
+      <field name="currency_id" column_invisible="True" invisible="False"/>
+      <field name="cost_currency_id" column_invisible="True"/>
+      <field name="is_favorite" widget="boolean_favorite" optional="show" nolabel="1" column_invisible="True"/>
+      <field name="name" string="Product Name" optional="show"/>
+      <field name="barcode" optional="show"/>
+      <field name="combo_ids" optional="show"/>
+      <field name="default_code" optional="show"/>
+      <field name="default_code" optional="hide" column_invisible="True"/>
+      <field name="responsible_id" widget="many2one_avatar_user" optional="hide" groups="stock.group_stock_user" column_invisible="True"/>
+      <field name="website_id" groups="website.group_multi_website" optional="hide"/>
+      <field name="product_tag_ids" widget="many2many_tags" optional="show" column_invisible="True"/>
+      <field name="website_ribbon_id" optional="hide" column_invisible="True"/>
+      <field name="barcode" optional="hide" readonly="product_variant_count != 1" column_invisible="True"/>
+      <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company" optional="hide"/>
+      <field name="list_price" string="Sales Price" widget="monetary" options="{'currency_field': 'currency_id'}" optional="show" decoration-muted="not sale_ok"/>
+      <field optional="show" name="x_studio_" class="Prix golf"/>
+      <field name="standard_price" widget="monetary" options="{'currency_field': 'cost_currency_id'}" optional="show" readonly="1"/>
+      <field name="property_account_creditor_price_difference" optional="show"/>
+      <field name="pos_categ_ids" widget="many2many_tags" groups="point_of_sale.group_pos_user" optional="hide" string="POS Product Category"/>
+      <field name="available_in_pos" groups="point_of_sale.group_pos_user" optional="hide"/>
+      <field name="categ_id" optional="hide" column_invisible="True"/>
+      <field name="type" optional="hide" readonly="1" column_invisible="True"/>
+      <field name="show_on_hand_qty_status_button" column_invisible="True" groups="stock.group_stock_user"/>
+      <field name="qty_available" invisible="False" string="On Hand" optional="show" decoration-danger="qty_available &lt; 0" groups="stock.group_stock_user" column_invisible="False"/>
+      <field name="x_studio_monetary_field_m5_1jbnb0abu" optional="show"/>
+      <field name="x_studio_marge_" optional="show"/>
+      <field name="virtual_available" invisible="False" string="Forecasted" optional="show" decoration-danger="virtual_available &lt; 0" decoration-bf="1" groups="stock.group_stock_user" column_invisible="False"/>
+      <field name="uom_id" string="Unit" readonly="1" optional="show" groups="uom.group_uom"/>
+      <field name="active" column_invisible="True"/>
+      <field name="activity_exception_decoration" widget="activity_exception"/>
+    </list>
+    <list string="Product" multi_edit="1" sample="1">
+      <header>
+        <button string="Print Labels" type="object" name="action_open_label_layout"/>
+      </header>
+      <field name="product_variant_count" column_invisible="True" invisible="False"/>
+      <field name="sale_ok" column_invisible="True" invisible="False"/>
+      <field name="currency_id" column_invisible="True" invisible="False"/>
+      <field name="cost_currency_id" column_invisible="True"/>
+      <field name="is_favorite" widget="boolean_favorite" optional="show" nolabel="1" column_invisible="True"/>
+      <field name="name" string="Product Name" optional="show"/>
+      <field name="barcode" optional="show"/>
+      <field name="combo_ids" optional="show"/>
+      <field name="default_code" optional="show"/>
+      <field name="default_code" optional="hide" column_invisible="True"/>
+      <field name="responsible_id" widget="many2one_avatar_user" optional="hide" groups="stock.group_stock_user" column_invisible="True"/>
+      <field name="website_id" groups="website.group_multi_website" optional="hide"/>
+      <field name="product_tag_ids" widget="many2many_tags" optional="show" column_invisible="True"/>
+      <field name="website_ribbon_id" optional="hide" column_invisible="True"/>
+      <field name="barcode" optional="hide" readonly="product_variant_count != 1" column_invisible="True"/>
+      <field name="company_id" options="{'no_create': True}" groups="base.group_multi_company" optional="hide"/>
+      <field name="list_price" string="Sales Price" widget="monetary" options="{'currency_field': 'currency_id'}" optional="show" decoration-muted="not sale_ok"/>
+      <field optional="show" name="x_studio_" class="Prix golf"/>
+      <field name="standard_price" widget="monetary" options="{'currency_field': 'cost_currency_id'}" optional="show" readonly="1"/>
+      <field name="property_account_creditor_price_difference" optional="show"/>
+      <field name="pos_categ_ids" widget="many2many_tags" groups="point_of_sale.group_pos_user" optional="hide" string="POS Product Category"/>
+      <field name="available_in_pos" groups="point_of_sale.group_pos_user" optional="hide"/>
+      <field name="categ_id" optional="hide" column_invisible="True"/>
+      <field name="type" optional="hide" readonly="1" column_invisible="True"/>
+      <field name="show_on_hand_qty_status_button" column_invisible="True" groups="stock.group_stock_user"/>
+      <field name="qty_available" invisible="False" string="On Hand" optional="show" decoration-danger="qty_available &lt; 0" groups="stock.group_stock_user" column_invisible="False"/>
+      <field name="x_studio_monetary_field_m5_1jbnb0abu" optional="show"/>
+      <field name="x_studio_marge_" optional="show"/>
+      <field name="virtual_available" invisible="False" string="Forecasted" optional="show" decoration-danger="virtual_available &lt; 0" decoration-bf="1" groups="stock.group_stock_user" column_invisible="False"/>
+      <field name="uom_id" string="Unit" readonly="1" optional="show" groups="uom.group_uom"/>
+      <field name="active" column_invisible="True"/>
+      <field name="activity_exception_decoration" widget="activity_exception"/>
+    </list>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[28]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[6]" position="attributes">
+    <attribute name="required">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[6]" position="attributes">
+    <attribute name="readonly">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[8]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[17]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[6]" position="attributes">
+    <attribute name="string">Produit</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[6]" position="attributes">
+    <attribute name="placeholder">Type to find a product...</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[7]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[7]" position="after">
+    <field name="base_unit_price" optional="show"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[8]" position="attributes">
+    <attribute name="readonly">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[8]" position="attributes">
+    <attribute name="string">Prix unitaire</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[17]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[17]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[22]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[22]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[22]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[6]" position="after">
+    <field name="virtual_available" optional="show"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[7]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[7]" position="after">
+    <field name="product_tooltip" optional="show"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[8]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[6]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[6]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[6]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[13]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[20]" position="before">
+    <field name="base_unit_price" optional="show"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[20]" position="after">
+    <field name="taxes_id" optional="show"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]/list[1]/field[20]" position="before">
+    <field name="attribute_line_ids" optional="show"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="x_studio_produit_1"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="x_studio_monetary_field_4kp_1jh1l3fvq"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="x_studio_selection_field_6lm_1jh1l47l0"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="attributes">
+    <attribute name="string">Produit</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="x_studio_many2many_field_6rp_1jh0u90h9"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="user_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="campaign_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="source_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="medium_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="amount_untaxed_signed"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="invoice_line_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="invoice_has_outstanding"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="attachment_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="reversal_move_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="activity_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="statement_line_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="invoice_vendor_bill_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="x_studio_many2many_field_72a_1jh1jrrrn"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="x_studio_one2many_field_c6_1jh1lko7p"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="source_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="activity_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="campaign_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="source_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="medium_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="sequence_prefix"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="activity_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="activity_state"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="activity_type_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="rating_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="message_main_attachment_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="journal_group_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="statement_line_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="statement_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="invoice_line_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="invoice_vendor_bill_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="reversal_move_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="user_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="deferred_original_move_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="ubl_cii_xml_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="x_studio_one2many_field_8ii_1jar8i8dc"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="x_studio_related_field_2mj_1jgmvct3s"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="x_studio_one2many_field_7v2_1jh8lj1nq"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="x_studio_many2one_field_fe_1jh8lk8ba"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]" position="inside">
+    <field name="x_studio_many2many_field_2sv_1jh8lkr52"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_8au_1jh8lo41p"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="purchase_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="tax_totals"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="invoice_line_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="Nouvelle page" name="studio_page_856_1jh8lu24a">
+      <group name="studio_group_856">
+        <group name="studio_group_856_left"/>
+        <group name="studio_group_856_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_related_field_8c5_1jh0u0hoa"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="Nouvelle page" name="studio_page_98n_1jh8m0hdb">
+      <group name="studio_group_98n">
+        <group name="studio_group_98n_left"/>
+        <group name="studio_group_98n_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2one_field_54_1jh8m1eoa"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2many_field_5ig_1jh8m3hk1"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_3vn_1jh8m6pr1"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_8qt_1jh8m883i"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2one_field_ei_1jh8mb7u9" options="{'create_name_field': 'complete_name'}"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_related_field_22m_1jh8mc1ta"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_related_field_1g4_1jh8mdc0q"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_related_field_5mt_1jh8mfcri"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_related_field_7kk_1jh8mhura"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_related_field_6j0_1jh8mj3tb"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_related_field_8b2_1jh8mlupq"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">reference</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="options">{"model_field":"purchase_id"}</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="Nouvelle page" name="studio_page_2e1_1jh8op2oj">
+      <group name="studio_group_2e1">
+        <group name="studio_group_2e1_left"/>
+        <group name="studio_group_2e1_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[6]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="Nouvelle page" name="studio_page_5h4_1jh8oq17t">
+      <group name="studio_group_5h4">
+        <group name="studio_group_5h4_left"/>
+        <group name="studio_group_5h4_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[6]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="Nouvelle page" name="studio_page_1r0_1jh8p0m7t">
+      <group name="studio_group_1r0">
+        <group name="studio_group_1r0_left"/>
+        <group name="studio_group_1r0_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="attributes">
+    <attribute name="string">Commandes</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/group[1]" position="after">
+    <notebook name="studio_notebook_3pa_1jh8p9a97">
+      <page string="New Page" name="studio_page_3pa">
+        <group name="studio_group_3pa">
+          <group name="studio_group_3pa_left"/>
+          <group name="studio_group_3pa_right"/>
+        </group>
+      </page>
+    </notebook>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="Nouvelle page" name="studio_page_965_1jh8pb9nn">
+      <group name="studio_group_965">
+        <group name="studio_group_965_left"/>
+        <group name="studio_group_965_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_related_field_618_1jh8pdiqo"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]" position="after">
+    <field name="invoice_line_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="x_studio_many2many_field_6rp_1jh0u90h9"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="attributes">
+    <attribute name="string">Produit</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="source_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="tax_totals"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="purchase_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="after">
+    <field name="pos_order_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="Nouvelle page" name="studio_page_5ij_1jh8q4o8u">
+      <group name="studio_group_5ij">
+        <group name="studio_group_5ij_left"/>
+        <group name="studio_group_5ij_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]" position="after">
+    <field name="invoice_line_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="inside">
+    <field name="statement_line_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2one_field_4bl_1jh8qbjg0"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2many_field_5ug_1jh8qca12"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2many_field_7hl_1jh8qe518"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">one2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_28k_1jh8qge5h"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_2ag_1jh8qhf49"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2many_field_742_1jh8qohs2"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="rating_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="message_main_attachment_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="statement_line_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="invoice_vendor_bill_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="source_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="invoice_pdf_report_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="statement_line_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="medium_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="activity_type_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="message_follower_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="suitable_journal_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="user_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="deferred_move_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="direction_sign"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="expense_sheet_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="purchase_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="required">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="force_save">1</attribute>
+    <attribute name="readonly">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="options">{"no_open":true}</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="transfer_model_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="pos_order_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_related_field_8c5_1jh0u0hoa"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_produit"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_8s3_1jh8tic6v"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="invoice_line_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2many_field_4j_1jh8tmkid"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="Nouvelle page" name="studio_page_8m2_1jh8to5ll">
+      <group name="studio_group_8m2">
+        <group name="studio_group_8m2_left"/>
+        <group name="studio_group_8m2_right"/>
+      </group>
+    </page>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/group[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="pos_refunded_invoice_ids"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_5mi_1jfdvtlq1"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="extract_attachment_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2one_field_315_1jh8tu4u4" options="{'create_name_field': 'complete_name'}"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="options">{"create_name_field":"complete_name","no_open":true}</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="options">{"create_name_field":"complete_name","no_open":false}</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2one_field_3i7_1jh8tv2ul"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">badge</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">selection_badge</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">many2one</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">statusbar</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_one2many_field_94q_1jh8u0f04"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">many2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="required">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="force_save">1</attribute>
+    <attribute name="readonly">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_many2many_field_7kr_1jh8ua8um"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">one2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">many2many_tags</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">many2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">one2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_related_field_6t5_1jh8ud4ss"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">many2many</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="x_studio_related_field_362_1jh8ug59k"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="replace"/>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]" position="inside">
+    <field name="purchase_id"/>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">selection_badge</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">statusbar</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">many2one</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="force_save">1</attribute>
+    <attribute name="readonly">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="required">True</attribute>
+  </xpath>
+  <xpath expr="/form[1]/sheet[1]/notebook[1]/page[5]/field[1]" position="attributes">
+    <attribute name="widget">image</attribute>
+  </xpath>
+</data>
