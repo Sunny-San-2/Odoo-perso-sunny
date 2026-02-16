@@ -1,6 +1,6 @@
 <data>
   <xpath expr="//group[@name='utm_link']" position="replace"/>
-  
+  <xpath expr="/form//page[@id='invoice_tab']" position="replace"/>
   <xpath expr="//div[@name='journal_div']" position="after">
     <field name="x_studio_commercial_2"/>
   </xpath>
