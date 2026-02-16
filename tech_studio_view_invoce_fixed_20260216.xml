@@ -1,0 +1,61 @@
+<data>
+  <!--<xpath expr="//group[@name='utm_link']" position="replace"/>-->
+  <xpath expr="//div[@name='journal_div']" position="after">
+    <field name="x_studio_commercial_2"/>
+  </xpath>
+  <xpath expr="//page[@name='aml_tab']" position="attributes">
+    <attribute name="groups">account.group_account_readonly,documents.group_documents_manager</attribute>
+  </xpath>
+  <xpath expr="//field[@name='line_ids']" position="attributes">
+    <attribute name="widget">one2many</attribute>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='aml_tab']/field[@name='line_ids']/list[1]/field[@name='partner_id']" position="after">
+    <field name="product_id" optional="show"/>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='aml_tab']/field[@name='line_ids']/list[1]/field[@name='name']" position="attributes">
+    <attribute name="options">{"model_field":"purchase_line_id"}</attribute>
+    <attribute name="widget">char</attribute>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='aml_tab']/field[@name='line_ids']/list[1]/field[@name='name']" position="after">
+    <field name="quantity" optional="show"/>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='aml_tab']/field[@name='line_ids']/list[1]/field[@name='analytic_distribution']" position="after">
+    <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='aml_tab']/field[@name='line_ids']/list[1]/field[@name='account_id']" position="move"/>
+    <field name="price_unit" optional="show"/>
+    <field name="tax_base_amount" optional="show"/>
+    <field name="company_currency_id"/>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='aml_tab']/field[@name='line_ids']/form[1]/group[1]/field[@name='name']" position="attributes">
+    <attribute name="options">{"placeholder_field":"ref"}</attribute>
+    <attribute name="widget">char</attribute>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]/page[@name='aml_tab']/div[1]" position="after">
+    <group name="studio_group_16b_1jgi0fi86">
+      <group name="studio_group_16b_left"/>
+      <group name="studio_group_16b_right">
+        <field name="amount_untaxed" string="Montant HT"/>
+        <field name="amount_tax" string="Taxe 20%"/>
+        <field name="amount_total_signed" string="Total TTC"/>
+      </group>
+    </group>
+  </xpath>
+  <xpath expr="//field[@name='incoterm_location']" position="attributes">
+    <attribute name="string">2% taux de pénalités de retard</attribute>
+  </xpath>
+  <xpath expr="//form[1]/sheet[1]/notebook[1]" position="inside">
+    <page string="MARGE FACTURE" name="studio_page_9la_1jc1a06c4">
+      <group name="studio_group_9la">
+        <group name="studio_group_9la_left">
+          <field name="x_studio_marge"/>
+        </group>
+        <group name="studio_group_9la_right"/>
+      </group>
+    </page>
+    <page string="Ligne de commande" name="studio_page_9am_1jgmu6g46">
+      <group name="studio_group_9am">
+        <group name="studio_group_9am_left"/>
+        <group name="studio_group_9am_right"/>
+      </group>
+    </page>
+  </xpath>
+</data>
